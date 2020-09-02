@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+nav {
+  display: flex;
+  width: 80%;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.mobilenavbar {
+  display: none;
+}
+
+.navlist {
+  display: flex;
+}
+.navlist li {
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-right: 0.75em;
+}
+.navlist a {
+  font-style: italic;
+  color: black;
+  transition: color ease-in-out 100ms;
+}
+.navlist .active {
+  color: #7851ea;
+}
+
+.navlist a:hover {
+  color: #7851ea;
+}
+#navtoggler {
+  font-size: 2rem;
+  margin-right: 0.8em;
+  cursor: pointer;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* banner section */
+
+.bannerhead {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 10px;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1em;
+  margin: 10em auto 2em;
+}
+.leftbanner {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 1.15em auto;
+  padding: 0.5em;
+}
+
+.leftbanner h1 {
+  font-size: 2em;
+  margin: 0.2em 0 0.8em;
+  letter-spacing: 0.09em;
+}
+.leftbanner h3 {
+  font-size: 0.85em;
+}
+.btn {
+  font-size: 1.2rem;
+  margin: 2em 0.5em 0;
+  padding: 0.5em;
+  border-radius: 0.35em;
+  border: 2px solid #4857dd;
+  outline: none;
+  cursor: pointer;
+  transition: all ease-in-out 160ms;
+}
+.hirebtn,
+.linktotbn:hover {
+  background-color: #4857dd;
+  color: whitesmoke;
+}
+.linktotbn,
+.hirebtn:hover {
+  background-color: whitesmoke;
+  color: #4857dd;
+}
+
+.rigimg {
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* about us section */
+
+.aboutusbanner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 10px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1em;
+  margin: 3em auto 2em;
+}
+.aboutusrightbanner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 0.75em;
+  margin: 0 auto;
+}
+.aboutusrightbanner h1 {
+  font-size: 3rem;
+  font-family: cursive;
+  margin-bottom: 0.8em;
+}
+.aboutusrightbanner p {
+  font-size: 1.25rem;
+}
+.aboutusrightbanner button {
+  width: 40%;
+}
+.aboutusleftbanner {
+  text-align: center;
+  height: 100%;
+}
+
+/* brandssection */
+.brands {
+  margin: 6rem auto 1.5rem;
+  display: flex;
+}
+.brandsleft {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.brandpics {
+  border: 1px solid rgba(54, 53, 53, 0.685);
+  padding: 0.6em;
+  text-align: center;
+  width: 188px;
+  height: 118px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all ease-in-out 300ms;
+}
+.brandpics:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.brandpics img {
+  width: 70%;
+  height: 100%;
+  filter: brightness(10%);
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.brandsright {
+  flex: 1;
+}
+.brandsrightdiv {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #dbd1d1;
+  display: flex;
+  flex-direction: column;
+}
+.rightupdiv,
+.rightdowndiv {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 5rem;
+}
+
+.phonehead,
+.phonelogo {
+  color: #3b1f8f;
+  font-size: 5rem;
+}
+.phoneheadbelow {
+  font-size: 1.32rem;
+  margin: 0.8em;
+}
+.rightdowntext {
+  font-size: 1.4rem;
+  margin: 0 0.6em 0.6em;
+}
+
+/* --------servicesCards -------------*/
+
+.servicescards {
+  margin: 10rem auto 2rem;
+}
+.servicesheading {
+  font-size: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em auto 0.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.servicestext {
+  font-size: 1.08rem;
+  text-align: center;
+}
+.servicesgridcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
+  text-align: center;
+  margin: 5rem auto 2rem;
+  width: 85%;
+}
+
+.servicesgrids {
+  padding: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  border-radius: 0.3em;
+}
+.servicesgrids:hover {
+  transform: scale(1.14);
+}
+.servicesgridimg {
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.servicesgridhead {
+  margin: 0.9em auto 0;
+  font-size: 1.5rem;
+}
+.servicesgridpara {
+  margin: 0.9em auto 0;
+  font-size: 1.1rem;
+}
+
+/* portfoilo sections */
+.portfoilos{
+    margin: 10rem auto 0;
+}
+.portfoliotopheaders h1{
+    font-size: 3rem;
+    margin-bottom: 0.7em;
+}
+.buttonsportfolio button{
+    font-size: 1.2rem;
+    padding: 0.25em;
+    margin-right: 0.3em;
+    outline: none;
+    border: 1px solid rgb(185, 184, 181);
+    border-radius: 0.15em;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+.buttonsportfolio button:hover{
+    background-color: #4857dd;
+    color: whitesmoke;
+}
+.portfoliomainsection{
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.portfoilomainpics h3{
+    font-size: 1.52rem;
+    font-family: cursive;
+}
+.portfoilomainpics img{
+    transition: all ease-in-out 400ms;
+    cursor: pointer;
+}
+
+.portfoilomainpics img:hover{
+box-shadow: 0px 0px 20px 10px rgba(70,74,61,0.46);
+}
+.portfoilomainpics small{
+    font-size: 1.02rem;
+    font-family: monospace;
+}
+/* slider section */
+
+.carousol{
+    margin: 10rem auto 0;
+}
+.carousoltext{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.carousoltext h1{
+    font-size: 3rem;
+    margin-bottom: 0.4em;
+}
+.carousoltext p{
+    font-size: 1.14rem;
+    margin-bottom: 0.4em;
+    color: rgba(58, 53, 53, 0.801);
+}
+
+.glider{
+    padding: 2rem 0;
+}
+.glider-prev,.glider-next{
+    display: block;
+}
+.sliderdivs {
+  display: flex;
+  align-items: flex-start;
+  border: 0.5px solid rgb(214, 212, 212);
+  margin-right: 0.5rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem ;
+}
+.sliderdivs img{
+    height: 100%;
+}
+.innersliderdiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 0.5rem;
+}
+.innersliderdiv h3{
+    flex-grow: 1;
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.innersliderdiv p{
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+/* contactform section */
+.contactform {
+  margin: 6rem auto 2rem;
+  background: url(../img/subscribe-bg.png) no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 6rem 0;
+  color: rgb(255, 255, 255);
+}
+.contactformmain {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.contactformmain h2 {
+  font-size: 2.4rem;
+  margin: 1em auto 0.2em;
+}
+.contactformmain p {
+  font-size: 1.15rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.733);
+}
+.contactformmain form {
+  width: 80%;
+  margin: 1.75em auto;
+  padding: 1em 0;
+}
+
+#formtext {
+  width: 50%;
+  padding: 1em;
+  margin-right: 0.5em;
+  border: 2px solid #4857dd;
+  border-radius: 0.35rem;
+  outline: none;
+}
+#subscribebtn:hover {
+  background-color: #4857dd;
+  color: whitesmoke;
+}
+
+/* footer section */
+footer {
+  margin: 2rem auto 0;
+  background: url(../img/footer-bg.png) no-repeat;
+  padding: 10rem 0 0;
+}
+.foodiv {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.foodiv h3 {
+  font-size: 1.7rem;
+  margin: 1em auto 0.2em;
+}
+.foodiv h4 {
+  font-size: 1.18rem;
+  margin: 1em auto 4rem;
+}
+.foologos i {
+  font-size: 1.2rem;
+  margin: 0.7em 0.3em;
+  opacity: 0.2;
+  transition: all ease-in-out 300ms;
+}
+.foologos i:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+.fb-logo {
+  color: blue;
+}
+.insta-logo {
+  color: rgb(158, 34, 196);
+}
+.twitt-logo {
+  color: rgb(0, 174, 255);
+}
+.what-logo {
+  color: rgb(21, 255, 0);
+}
+
+
+/* custom css classes */
+@keyframes picsanim{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.addpic{
+    animation: picsanim 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.activeport{
+  background-color: #4857dd;
+  color: whitesmoke;
+}
