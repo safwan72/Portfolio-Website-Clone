@@ -175,7 +175,7 @@ main {
 .brandsleft {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   align-items: flex-start;
   gap: 0.7rem;
 }
@@ -301,6 +301,7 @@ main {
     font-size: 1.2rem;
     padding: 0.25em;
     margin-right: 0.3em;
+    margin-bottom: 0.3em;
     outline: none;
     border: 1px solid rgb(185, 184, 181);
     border-radius: 0.15em;

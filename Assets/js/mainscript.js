@@ -51,7 +51,7 @@ function tabs(ed) {
   buttonsall.forEach((e) => {
     e.classList.remove("activeport");
   });
-  ed.classList.add("activeport");
+  // ed.classList.add("activeport");
 }
 
 

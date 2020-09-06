@@ -82,7 +82,10 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+
+
+
+@media screen and (max-width: 695px) {
   .logo img {
     width: 85%;
   }
@@ -127,6 +130,10 @@
   .show {
     transform: translateY(0);
   }
+  
+
+}
+@media screen and (max-width: 650px) {
   .aboutusrightbanner h1 {
     font-size: 2.25rem;
   }
@@ -203,6 +210,12 @@
     font-size: 0.7em;
     margin-top: 0.695em;
   }
+  .brandsleft {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: auto;
+    text-align: center;
+}
+
   .btn {
     margin: 0.8em 0.2em 0;
   }
@@ -232,5 +245,8 @@
   #formtext {
     width: 90%;
     margin: 0;
+  }
+  .portfoliotopheaders h1{
+    font-size: 2rem;
   }
 }
